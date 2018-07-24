@@ -4,55 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <style>
-        .container {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(6, 50px);
-            grid-gap: 10px;
-            width: 60%;
-            margin: 50px auto;
-            padding: 40px;
-        }
-
-        .itemlayar {
-            background-color: cyan;
-            display: grid;
-            grid-column: 1 / -1;
-            grid-row: span 2;
-            text-align: right;
-            font-family: sans-serif;
-            font-size: 40px;
-            padding-right: 40px;
-            color: black;
-            border-radius: 10px;
-        }
-
-        .itemequal,
-        .itemreset,
-        .item0 {
-            /* background-color: cyan; */
-            grid-column: span 2;
-        }
-
-        .operasi {
-            background-color: #a1a1a1;
-        }
-
-        .itemtambah {
-            grid-row: span 2;
-        }
-
-        .btn {
-            font-size: 25px;
-            border-radius: 10px;
-        }
-
-        .itemmodulus {
-            font-size: 18px;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="text/javascript" href="./app.js">
     <title>basicCalc</title>
 </head>
 
@@ -80,21 +33,6 @@
         <input type="button" class="btn itemtitik" value="." onclick="insertNumber(this.value)">
         <button class="btn itemequal" onclick="operasi()">=</button>
     </div>
-
-    <script>
-        function insertNumber(angka) {
-            document.getElementById("tampil").value += angka;
-        }
-
-        function operasi() {
-            var olah = document.getElementById("tampil").value;
-            document.getElementById("tampil").value = eval(olah);
-        }
-
-        function reset() {
-            document.getElementById("tampil").value = "";
-        }
-    </script>
 </body>
 
 </html>
