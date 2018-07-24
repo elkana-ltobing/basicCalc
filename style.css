@@ -3,15 +3,16 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 50px);
     grid-gap: 10px;
-    width: 60%;
+    width: 90%;
     margin: 50px auto;
     padding: 40px;
+    background-color: mistyrose;
 }
 
 .itemlayar {
-    background-color: cyan;
+    background-color: white;
     display: grid;
-    grid-column: 1 / -1;
+    grid-column: span 6;
     grid-row: span 2;
     text-align: right;
     font-family: sans-serif;
@@ -39,11 +40,9 @@
 .btn {
     font-size: 25px;
     border-radius: 10px;
-    padding: 5px 25px;
 }
 
 .itemmodulus {
     font-size: 18px;
     border-radius: 10px;
-    padding: 5px 25px;
 }
