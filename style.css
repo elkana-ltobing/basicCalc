@@ -11,6 +11,7 @@
     margin: 50px auto;
     padding: 40px;
     background-color: mistyrose;
+    border-radius: 20px;
 }
 
 .itemlayar {
@@ -23,7 +24,7 @@
     font-size: 40px;
     padding-right: 40px;
     color: black;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .itemequal,
